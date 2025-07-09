@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELETE page</title>
+</head>
+<body>
+    <h2>Enter Detalis for delete the user</h2>
+    <form method="post" action="/user/<%= user.id %>?_method=DELETE" >
+        <textarea name="email" id="email" placeholder="email"></textarea>
+        <input type="password" name="password">
+        <button>Delete</button>
+    </form>
+
+</body>
+</html>
